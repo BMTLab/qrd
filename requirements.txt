@@ -1,0 +1,6 @@
+libsdl-dev libpng-dev libjpeg-dev libncurses-dev libx11-dev
+
+# for ubuntu:
+sudo apt install libsdl-dev libpng-dev libjpeg-dev libncurses-dev libx11-dev
+
+
