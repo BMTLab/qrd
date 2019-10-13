@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "name": "Unix",
+            "defines": [
+                "DEBUG",
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "USE_QRD_CONFIG"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "browse": {
+                "path": [
+                    "usr/include/",
+                    "${workspaceFolder}"
+                ],
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64",
+            "includePath": [
+                "${default}",
+                "usr/include/",
+                "${workspaceFolder}/qrd_src/demo/include",
+                "${workspaceFolder}/qrd_src/shared/quirc/lib",
+                "${workspaceFolder}/qrd_src/shared/scan_files/include"
+            ]
+        }
+    ],
+    "version": 4,
+    "enableConfigurationSquiggles": true
+}

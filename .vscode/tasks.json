@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-g",
+        "-I qrd_src/shared/quirc/lib",
+        "-I qrd_src/shared/scan_files/include",
+        "-I qrd_src/demo/include",
+        "qrd_src/demo/qrd_demo.c",
+        "qrd_src/shared/scan_files/scan_files.c",
+        "qrd_src/shared/quirc/lib/decode.c",
+        "qrd_src/shared/quirc/lib/identify.c",
+        "qrd_src/shared/quirc/lib/quirc.c",
+        "qrd_src/shared/quirc/lib/version_db.c",
+        "-lm",
+        "-lpng",
+        "-o",
+        "qrd_src/bin/qrd_demo",
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}

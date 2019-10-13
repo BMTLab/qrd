@@ -1,0 +1,44 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/qrd_src/bin/qrd_demo",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/qrd-src/bin",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Launching debug with gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "Build"
+    },
+    // {
+    //   "name": "Launch Release",
+    //   "type": "cppdbg",
+    //   "request": "launch",
+    //   "program": "${workspaceFolder}/qrd-src/bin/qrd-demo",
+    //   "args": [],
+    //   "stopAtEntry": false,
+    //   "cwd": "${workspaceFolder}/qrd-src/bin",
+    //   "environment": [],
+    //   "externalConsole": true,
+    //   "setupCommands": [
+    //     {
+    //       "description": "Launching release",
+    //       "text": "-enable-pretty-printing",
+    //       "ignoreFailures": true
+    //     }
+    //   ],
+    //   "preLaunchTask": "Build Release"
+    // }
+  ]
+}
